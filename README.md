@@ -720,7 +720,9 @@ $ ./ifcompound.sh
 ## OUTPUT
 ![Alt text](img/68.png)
 # using the case command
-	 
+
+cat > casecheck.sh
+
 ```bash
 case $USER in
 Ram | Robert)
@@ -738,7 +740,7 @@ $ chmod 755 casecheck.sh
  
 $ ./casecheck.sh 
  
-cat > whiletest
+cat > whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -754,7 +756,7 @@ $ chmod 755 whiletest.sh
 $ ./whiletest.sh
  
  
-cat untiltest.sh 
+cat > untiltest.sh 
 ```bash
 \#using the until command
 var1=100
@@ -766,9 +768,14 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
+
+ ./untiltest.sh
  
+ ##OUTPUT
+![Alt text](img/82.png)
+
  
-cat forin1.sh 
+cat > forin1.sh 
 ```bash
 \#!/bin/bash
 \#basic for command
@@ -780,8 +787,12 @@ done
  
 $ chmod 755 forin1.sh
  
- 
-cat forin2.sh 
+./forin1.sh
+
+##OUTPUT:
+![Alt text](img/83.png)
+
+cat > forin2.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -793,20 +804,13 @@ done
  
 $ chmod 755 forin2.sh
  
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
- 
-cat forin3.sh 
+./forin2.sh
+
+##OUTPUT : 
+![Alt text](img/84.png)
+
+
+cat > forin3.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -815,21 +819,14 @@ do
 echo "word:$test"
 done
 ```
+chmod 755 forin2.sh
 $ ./forin3.sh 
  
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
+##OUTPUT
+![Alt text](img/85.png)
 
-## OUTPUT
-cat forinfile.sh 
+
+cat > forinfile.sh 
 ```bash
 #!/bin/bash
 # reading values from a file
@@ -840,7 +837,8 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
-$ cat cities
+$ cat >  cities
+
 Hyderabad
 Alampur
 Basara
@@ -849,10 +847,12 @@ Adilabad
 Bhadrachalam
 Khammam
 
+cat cities
+
 ## OUTPUT
+![Alt text](img/86.png)
 
-
-cat forctype.sh 
+cat > forctype.sh 
 ```bash
 #!/bin/bash
 # testing the C-style for loop
@@ -1041,7 +1041,7 @@ set +x
 
  ./argshift.sh 1 2 3
  ## OUTPUT
- ![Alt text](img/81.png)
+ 
  
 cat > nc.awk
 ```bash
